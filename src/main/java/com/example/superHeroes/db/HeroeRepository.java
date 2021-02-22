@@ -57,6 +57,7 @@ public interface HeroeRepository extends CrudRepository<HeroeEntity, Long> {
 	 */
 	@Query("SELECT h from HeroeEntity h WHERE h.nombre like  %:nombre%")
 	List<HeroeEntity> findByValor(@Param("nombre") String nombre);
+	
 
 
 }
